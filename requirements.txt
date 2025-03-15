@@ -5,8 +5,7 @@ pandas
 joblib
 requests
 
-# Supabase for database and authentication
-supabase-py
+
 
 # Google Gemini API for Health Assistant chatbot
 google-generativeai
