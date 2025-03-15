@@ -3,8 +3,13 @@ import base64
 
 def get_base64_image(image_path):
     """Convert image to base64 format for embedding in HTML."""
-    with open(image_path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode()
+    try:
+        with open(image_path, "rb") as img_file:
+            return base64.b64encode(img_file.read()).decode()
+    except FileNotFoundError:
+        st.error(f"⚠️ Error: Logo file not found at {image_path}")
+        return None  # Handle missing file gracefully
+
     
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
