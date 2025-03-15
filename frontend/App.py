@@ -21,11 +21,13 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+import os
 
+# Get the absolute path of the current script
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Convert logo image to base64
-logo_path = "C:/Users/HP/Desktop/ECHOhealth/assets/logo.jpeg"  # Ensure this path is correct
-logo_base64 = get_base64_image(logo_path)
+# Construct the relative path to the logo
+logo_path = os.path.join(BASE_DIR, "C:/Users/HP/Desktop/ECHOhealth/assets/logo.jpeg")  # Adjust if needed
 
 # Custom Compact Header
 st.markdown(f"""
