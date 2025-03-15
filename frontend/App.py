@@ -28,6 +28,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the relative path to the logo
 logo_path = os.path.join(BASE_DIR, "C:/Users/HP/Desktop/ECHOhealth/assets/logo.jpeg")  # Adjust if needed
+# Ensure logo is loaded correctly
+logo_base64 = get_base64_image(logo_path)
+
 
 # Custom Compact Header
 st.markdown(f"""
