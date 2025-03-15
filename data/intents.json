@@ -1,0 +1,15 @@
+{
+    "intents": [
+      {
+        "tag": "voice_health",
+        "patterns": ["How can I improve my voice health?", "Tips for voice health"],
+        "responses": ["Stay hydrated, avoid excessive talking, and do voice exercises regularly."]
+      },
+      {
+        "tag": "symptoms",
+        "patterns": ["What are common symptoms of voice disorders?", "Symptoms of voice disorders"],
+        "responses": ["Common symptoms include hoarseness, vocal fatigue, pain, and difficulty projecting voice."]
+      }
+    ]
+  }
+  
